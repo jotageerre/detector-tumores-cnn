@@ -1,0 +1,20 @@
+# Entorno de entrenamiento (Anexo B.1: Python 3.10.8 + TensorFlow 2.15.1 + CUDA 12.2)
+# En Linux con GPU NVIDIA usa:  pip install "tensorflow[and-cuda]==2.15.1"
+tensorflow==2.15.1
+numpy<2
+pandas
+# IMPORTANTE: scikit-learn 1.8 cambió el barajado de StratifiedGroupKFold y genera
+# folds distintos. Las versiones 1.5.2, 1.6.1 y 1.7.2 reproducen byte a byte los
+# folds archivados en data/splits/robustez_5cv/ (comprobado).
+scikit-learn>=1.5,<1.8
+scipy
+h5py
+pillow
+matplotlib
+# Solo necesarios para el notebook completo (duplicados + tarea binaria IXI)
+imagehash
+scikit-image
+nibabel
+# Para ejecutar los notebooks sin interfaz (como en el clúster)
+jupyter
+nbconvert

@@ -1,0 +1,8 @@
+flask
+gunicorn
+tensorflow
+google-cloud-storage
+pillow
+matplotlib
+nibabel
+numpy

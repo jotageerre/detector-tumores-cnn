@@ -1,0 +1,108 @@
+{
+  "class_counts": {
+    "glioma": 89,
+    "meningioma": 82,
+    "pituitario": 62
+  },
+  "classes": [
+    "glioma",
+    "meningioma",
+    "pituitario"
+  ],
+  "cv_semantic_sha256": "985d9fc941ac672c9226a434ee31bbd827c2dc063e12e28b0235a5bd2550ce72",
+  "folds": [
+    {
+      "fold": 1,
+      "json": "results/tumor_type/robustez_5cv/splits/fold_1.json",
+      "n_test_patients": 47,
+      "n_train_patients": 186,
+      "sha256": "5ff82b0e0de68b0e4ab880833a3c5a030d10bcf45f7388af5fdb316a12ca5acd",
+      "test_class_counts": {
+        "glioma": 22,
+        "meningioma": 14,
+        "pituitario": 11
+      },
+      "train_class_counts": {
+        "glioma": 67,
+        "meningioma": 68,
+        "pituitario": 51
+      }
+    },
+    {
+      "fold": 2,
+      "json": "results/tumor_type/robustez_5cv/splits/fold_2.json",
+      "n_test_patients": 47,
+      "n_train_patients": 186,
+      "sha256": "058e1471fed249569e8a8f4398551d1411b829f2a14ff77f4eb8627d40e8a07a",
+      "test_class_counts": {
+        "glioma": 17,
+        "meningioma": 18,
+        "pituitario": 12
+      },
+      "train_class_counts": {
+        "glioma": 72,
+        "meningioma": 64,
+        "pituitario": 50
+      }
+    },
+    {
+      "fold": 3,
+      "json": "results/tumor_type/robustez_5cv/splits/fold_3.json",
+      "n_test_patients": 46,
+      "n_train_patients": 187,
+      "sha256": "a613622012f8be270a8d661b8eff58a8b9485eda0278aa211e81f7fd8c35d574",
+      "test_class_counts": {
+        "glioma": 17,
+        "meningioma": 18,
+        "pituitario": 11
+      },
+      "train_class_counts": {
+        "glioma": 72,
+        "meningioma": 64,
+        "pituitario": 51
+      }
+    },
+    {
+      "fold": 4,
+      "json": "results/tumor_type/robustez_5cv/splits/fold_4.json",
+      "n_test_patients": 47,
+      "n_train_patients": 186,
+      "sha256": "10ec4a9197d254b432e4ee2011fcb7f4ac40fc8e89d8945a4f5f5082554512bf",
+      "test_class_counts": {
+        "glioma": 14,
+        "meningioma": 17,
+        "pituitario": 16
+      },
+      "train_class_counts": {
+        "glioma": 75,
+        "meningioma": 65,
+        "pituitario": 46
+      }
+    },
+    {
+      "fold": 5,
+      "json": "results/tumor_type/robustez_5cv/splits/fold_5.json",
+      "n_test_patients": 46,
+      "n_train_patients": 187,
+      "sha256": "e99db727bc10e48c3badc90d5194b4f16ea648c16ff2eaa919371efd07030def",
+      "test_class_counts": {
+        "glioma": 19,
+        "meningioma": 15,
+        "pituitario": 12
+      },
+      "train_class_counts": {
+        "glioma": 70,
+        "meningioma": 67,
+        "pituitario": 50
+      }
+    }
+  ],
+  "groups": "patient_id",
+  "n_patients": 233,
+  "n_splits": 5,
+  "original_frozen_split_sha256": "fda7e2daeb9ec2de596e807728454329cd140398dd10f834599457eca86c0092",
+  "split_script": "preparar_5cv_robustez.py",
+  "split_script_sha256": "eea3093a0bc571c09977257759c152d84607e04530a255caa7d69792c7585327",
+  "split_seed": 20260904,
+  "tipo": "5-fold robustness validation split"
+}

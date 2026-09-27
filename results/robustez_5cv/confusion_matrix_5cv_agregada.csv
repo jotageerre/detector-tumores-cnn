@@ -1,0 +1,4 @@
+,pred_glioma,pred_meningioma,pred_pituitario
+real_glioma,79,9,1
+real_meningioma,9,66,7
+real_pituitario,1,1,60

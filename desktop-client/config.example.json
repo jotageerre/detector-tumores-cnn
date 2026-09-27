@@ -1,0 +1,12 @@
+{
+  "api_url": "https://TU-SERVICIO.run.app/predict",
+  "timeout_image": 600,
+  "timeout_nifti": 900,
+  "visual_threshold": 0.5,
+  "auto_rotate_3d": true,
+  "confirm_on_close": true,
+  "model_type": "cheng",
+  "theme": "light",
+  "language": "en",
+  "font_size": "small"
+}

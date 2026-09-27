@@ -1,0 +1,323 @@
+{
+  "tipo_experimento": "5-fold patient-level robustness validation of previously selected ResNet50-FT",
+  "objetivo": "Estimación interna complementaria de robustez del modelo previamente seleccionado; no utilizada para selección de arquitectura ni optimización de hiperparámetros.",
+  "cohorte": {
+    "dataset": "Cheng et al.",
+    "n_patients": 233,
+    "n_slices": 3064,
+    "class_counts_patients": {
+      "glioma": 89,
+      "meningioma": 82,
+      "pituitario": 62
+    }
+  },
+  "cross_validation": {
+    "metodo": "StratifiedGroupKFold",
+    "n_splits": 5,
+    "groups": "patient_id",
+    "split_seed": 20260904,
+    "cv_semantic_sha256": "985d9fc941ac672c9226a434ee31bbd827c2dc063e12e28b0235a5bd2550ce72",
+    "training_seeds": [
+      1001,
+      1002,
+      1003,
+      1004,
+      1005
+    ]
+  },
+  "modelo_fijo": {
+    "arquitectura": "ResNet50 ImageNet + cabeza clasificadora",
+    "epochs_head": 6,
+    "lr_head": 0.0001,
+    "epochs_finetune": 6,
+    "lr_finetune": 1e-05,
+    "n_capas_finetune": 20,
+    "batch_normalization_congelado": true
+  },
+  "metricas_entre_folds": {
+    "balanced_accuracy": {
+      "media": 0.8944038684054163,
+      "desviacion_tipica_muestral": 0.04640875418982894,
+      "min": 0.8229847494553377,
+      "max": 0.943355119825708,
+      "valores": [
+        0.9242424242424242,
+        0.8229847494553377,
+        0.943355119825708,
+        0.9007352941176471,
+        0.8807017543859649
+      ]
+    },
+    "accuracy": {
+      "media": 0.8800185013876041,
+      "desviacion_tipica_muestral": 0.04634542201112516,
+      "min": 0.8085106382978723,
+      "max": 0.9347826086956522,
+      "valores": [
+        0.8936170212765957,
+        0.8085106382978723,
+        0.9347826086956522,
+        0.8936170212765957,
+        0.8695652173913043
+      ]
+    },
+    "macro_f1": {
+      "media": 0.8824283147635181,
+      "desviacion_tipica_muestral": 0.05136391940175161,
+      "min": 0.8032258064516129,
+      "max": 0.9428571428571427,
+      "valores": [
+        0.9011055369751023,
+        0.8032258064516129,
+        0.9428571428571427,
+        0.8942978168784621,
+        0.8706552706552707
+      ]
+    }
+  },
+  "metricas_globales_oof_233_pacientes": {
+    "balanced_accuracy_paciente": 0.8867534779008537,
+    "accuracy_paciente": 0.8798283261802575,
+    "macro_f1_paciente": 0.8820534701632696,
+    "recall_por_clase": {
+      "glioma": 0.8876404494382022,
+      "meningioma": 0.8048780487804879,
+      "pituitario": 0.967741935483871
+    },
+    "matriz_confusion_agregada": [
+      [
+        79,
+        9,
+        1
+      ],
+      [
+        9,
+        66,
+        7
+      ],
+      [
+        1,
+        1,
+        60
+      ]
+    ],
+    "n_correctos": 205,
+    "n_total": 233
+  },
+  "folds": [
+    {
+      "fold": 1,
+      "seed": 1001,
+      "n_train_patients": 186,
+      "n_eval_patients": 47,
+      "balanced_accuracy_paciente": 0.9242424242424242,
+      "accuracy_paciente": 0.8936170212765957,
+      "macro_f1_paciente": 0.9011055369751023,
+      "recall_por_clase": {
+        "glioma": 0.7727272727272727,
+        "meningioma": 1.0,
+        "pituitario": 1.0
+      },
+      "matriz_confusion": [
+        [
+          17,
+          4,
+          1
+        ],
+        [
+          0,
+          14,
+          0
+        ],
+        [
+          0,
+          0,
+          11
+        ]
+      ],
+      "modelo_path": "results/tumor_type/robustez_5cv/models/resnet50_robustez5cv_fold_1.keras",
+      "modelo_sha256": "43d7f1163d3c32ae8759e77450f7f80a1ae369eba95000730cd7e19def70084e",
+      "resultado_path": "results/tumor_type/robustez_5cv/metrics/resultado_5cv_fold_1.json",
+      "resultado_sha256": "bf3f9a62d1f5b23b86a5b709c2c359b8c74886fef5acdb2f70e6b9773a8bb668",
+      "predicciones_paciente_path": "results/tumor_type/robustez_5cv/predictions/predicciones_paciente_5cv_fold_1.csv",
+      "predicciones_paciente_sha256": "f54d3e5da881de7d17bb3349350ea4e1ec56fcf6aa8457499264198b9adb43a4",
+      "fold_json": "results/tumor_type/robustez_5cv/splits/fold_1.json",
+      "fold_json_sha256": "5ff82b0e0de68b0e4ab880833a3c5a030d10bcf45f7388af5fdb316a12ca5acd"
+    },
+    {
+      "fold": 2,
+      "seed": 1002,
+      "n_train_patients": 186,
+      "n_eval_patients": 47,
+      "balanced_accuracy_paciente": 0.8229847494553377,
+      "accuracy_paciente": 0.8085106382978723,
+      "macro_f1_paciente": 0.8032258064516129,
+      "recall_por_clase": {
+        "glioma": 0.9411764705882353,
+        "meningioma": 0.6111111111111112,
+        "pituitario": 0.9166666666666666
+      },
+      "matriz_confusion": [
+        [
+          16,
+          1,
+          0
+        ],
+        [
+          2,
+          11,
+          5
+        ],
+        [
+          0,
+          1,
+          11
+        ]
+      ],
+      "modelo_path": "results/tumor_type/robustez_5cv/models/resnet50_robustez5cv_fold_2.keras",
+      "modelo_sha256": "f67a568e89675930276ea1d5ab18ded123be1fe2c8e539fb8803c50b975902cb",
+      "resultado_path": "results/tumor_type/robustez_5cv/metrics/resultado_5cv_fold_2.json",
+      "resultado_sha256": "011b41d586a96a9c28100f58769ee765c64c9efb9584c7428bfc620a769525d0",
+      "predicciones_paciente_path": "results/tumor_type/robustez_5cv/predictions/predicciones_paciente_5cv_fold_2.csv",
+      "predicciones_paciente_sha256": "e23bfd8ec8cb9455c13d2c39e482a9d7e8d516ba59a798623b179d5770a00aae",
+      "fold_json": "results/tumor_type/robustez_5cv/splits/fold_2.json",
+      "fold_json_sha256": "058e1471fed249569e8a8f4398551d1411b829f2a14ff77f4eb8627d40e8a07a"
+    },
+    {
+      "fold": 3,
+      "seed": 1003,
+      "n_train_patients": 187,
+      "n_eval_patients": 46,
+      "balanced_accuracy_paciente": 0.943355119825708,
+      "accuracy_paciente": 0.9347826086956522,
+      "macro_f1_paciente": 0.9428571428571427,
+      "recall_por_clase": {
+        "glioma": 0.9411764705882353,
+        "meningioma": 0.8888888888888888,
+        "pituitario": 1.0
+      },
+      "matriz_confusion": [
+        [
+          16,
+          1,
+          0
+        ],
+        [
+          2,
+          16,
+          0
+        ],
+        [
+          0,
+          0,
+          11
+        ]
+      ],
+      "modelo_path": "results/tumor_type/robustez_5cv/models/resnet50_robustez5cv_fold_3.keras",
+      "modelo_sha256": "256e352a86171036ed0f00aa31cba57c700a9ce9b332d68146715993cc159af3",
+      "resultado_path": "results/tumor_type/robustez_5cv/metrics/resultado_5cv_fold_3.json",
+      "resultado_sha256": "646cd957e87f6cdea97ae957b9411ecbf77598d4f354ee16ceee7e6c71e14dfd",
+      "predicciones_paciente_path": "results/tumor_type/robustez_5cv/predictions/predicciones_paciente_5cv_fold_3.csv",
+      "predicciones_paciente_sha256": "b27005f3df970aaf368db48997a5eabdd8e162c9c7096376887fba0bea099520",
+      "fold_json": "results/tumor_type/robustez_5cv/splits/fold_3.json",
+      "fold_json_sha256": "a613622012f8be270a8d661b8eff58a8b9485eda0278aa211e81f7fd8c35d574"
+    },
+    {
+      "fold": 4,
+      "seed": 1004,
+      "n_train_patients": 186,
+      "n_eval_patients": 47,
+      "balanced_accuracy_paciente": 0.9007352941176471,
+      "accuracy_paciente": 0.8936170212765957,
+      "macro_f1_paciente": 0.8942978168784621,
+      "recall_por_clase": {
+        "glioma": 1.0,
+        "meningioma": 0.7647058823529411,
+        "pituitario": 0.9375
+      },
+      "matriz_confusion": [
+        [
+          14,
+          0,
+          0
+        ],
+        [
+          4,
+          13,
+          0
+        ],
+        [
+          1,
+          0,
+          15
+        ]
+      ],
+      "modelo_path": "results/tumor_type/robustez_5cv/models/resnet50_robustez5cv_fold_4.keras",
+      "modelo_sha256": "7090ee5d559e53c1b2aea083ddc12e9f251babda4781362eaa5f93e6e4f59b19",
+      "resultado_path": "results/tumor_type/robustez_5cv/metrics/resultado_5cv_fold_4.json",
+      "resultado_sha256": "e7b66253a5ade8370c1b02be2b00870e23899ef49e86c086b56e27f50daa42ee",
+      "predicciones_paciente_path": "results/tumor_type/robustez_5cv/predictions/predicciones_paciente_5cv_fold_4.csv",
+      "predicciones_paciente_sha256": "5e0d848000bd499f1075ccc36137fd50af9829b9357404684d446ea5a8bd3d40",
+      "fold_json": "results/tumor_type/robustez_5cv/splits/fold_4.json",
+      "fold_json_sha256": "10ec4a9197d254b432e4ee2011fcb7f4ac40fc8e89d8945a4f5f5082554512bf"
+    },
+    {
+      "fold": 5,
+      "seed": 1005,
+      "n_train_patients": 187,
+      "n_eval_patients": 46,
+      "balanced_accuracy_paciente": 0.8807017543859649,
+      "accuracy_paciente": 0.8695652173913043,
+      "macro_f1_paciente": 0.8706552706552707,
+      "recall_por_clase": {
+        "glioma": 0.8421052631578947,
+        "meningioma": 0.8,
+        "pituitario": 1.0
+      },
+      "matriz_confusion": [
+        [
+          16,
+          3,
+          0
+        ],
+        [
+          1,
+          12,
+          2
+        ],
+        [
+          0,
+          0,
+          12
+        ]
+      ],
+      "modelo_path": "results/tumor_type/robustez_5cv/models/resnet50_robustez5cv_fold_5.keras",
+      "modelo_sha256": "87170f4dd47ff32154c6af08932dc7eae78f0a0356eed9d809e5ef6d7f55f3d8",
+      "resultado_path": "results/tumor_type/robustez_5cv/metrics/resultado_5cv_fold_5.json",
+      "resultado_sha256": "b494d58e1d96876b63de1fd6e2ddabce60d3c5679c420119e7272b803cae06ed",
+      "predicciones_paciente_path": "results/tumor_type/robustez_5cv/predictions/predicciones_paciente_5cv_fold_5.csv",
+      "predicciones_paciente_sha256": "35c0f43669814d3e9ee49e45cf76e72940fdd85c37f5c2867055fb228293a7ce",
+      "fold_json": "results/tumor_type/robustez_5cv/splits/fold_5.json",
+      "fold_json_sha256": "e99db727bc10e48c3badc90d5194b4f16ea648c16ff2eaa919371efd07030def"
+    }
+  ],
+  "resultado_test_original_referencia": {
+    "n_patients": 35,
+    "balanced_accuracy_paciente": 0.9388888888888888,
+    "accuracy_paciente": 0.9428571428571428,
+    "macro_f1_paciente": 0.9398282340311326,
+    "nota": "Resultado histórico del protocolo final original. Se conserva sin cambios y no es sustituido por la presente 5CV."
+  },
+  "hashes": {
+    "protocolo_5cv_sha256": "b6f2a7f421032e758fe4dbd97405e79e55a8b28a8c4f8593cb171072652a60f2",
+    "folds_master_sha256": "cf13cf8e661f3f010bbe3761ebf3ec09a8c4f9b879aceb55b2f8a169e5945674",
+    "split_script_sha256": "eea3093a0bc571c09977257759c152d84607e04530a255caa7d69792c7585327",
+    "training_script_sha256": "bd92f37861461e8cad4032ba7831749886de58453f2c42b21d8e17fd6c5414e6",
+    "aggregation_script_sha256": "7717e3f21f8b778f799ba9b5ed168563ff5dc23d4659c1cad73b5d025b1b86c2"
+  },
+  "interpretacion": {
+    "uso_correcto": "Validación interna complementaria de robustez del modelo seleccionado.",
+    "no_es": "Validación externa independiente.",
+    "nota": "Los 233 pacientes, incluidos los 35 del TEST histórico, participan en esta nueva cross-validation. Cada paciente aparece exactamente una vez como evaluación OOF en la 5CV."
+  }
+}

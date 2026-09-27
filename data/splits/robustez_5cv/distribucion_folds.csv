@@ -1,0 +1,6 @@
+fold,train_n,train_glioma,train_meningioma,train_pituitario,test_n,test_glioma,test_meningioma,test_pituitario
+1,186,67,68,51,47,22,14,11
+2,186,72,64,50,47,17,18,12
+3,187,72,64,51,46,17,18,11
+4,186,75,65,46,47,14,17,16
+5,187,70,67,50,46,19,15,12

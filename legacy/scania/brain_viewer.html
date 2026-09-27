@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>ScanIA · Visor volumétrico 3D</title>
+  <style>__CSS__</style>
+  <script src="https://unpkg.com/vtk.js"></script>
+</head>
+<body>
+  <!-- Lienzo del render -->
+  <div id="viewer"></div>
+
+  <!-- Capas de ambiente -->
+  <div class="fx grid"></div>
+  <div class="fx glow"></div>
+  <div class="fx scanlines"></div>
+  <div class="fx vignette"></div>
+
+  <!-- Barra superior -->
+  <div class="topbar">
+    <div class="brand"><span class="dot"></span>ScanIA
+      <small>Visor volumétrico 3D</small></div>
+    <div class="top-right">
+      <div class="badge">📄 <b id="badge_file">Estudio 3D</b></div>
+      <div class="badge"><span id="badge_model"></span></div>
+    </div>
+  </div>
+
+  <!-- Panel izquierdo: apariencia -->
+  <div class="panel left">
+    <h3>🎨 Apariencia</h3>
+    <div class="group">
+      <div class="lbl"><span>Preset visual</span></div>
+      <select id="preset">
+        <option value="cyan" selected>Cyan hologram</option>
+        <option value="grayscale">MRI grayscale</option>
+        <option value="soft">Soft tissue</option>
+        <option value="highcontrast">High contrast</option>
+        <option value="warm">Warm tissue</option>
+      </select>
+    </div>
+    <div class="group">
+      <div class="lbl"><span>Opacidad</span><span id="opacity_val">90</span></div>
+      <input type="range" id="opacity" min="0" max="100" value="90" />
+    </div>
+    <div class="group">
+      <div class="lbl"><span>Brillo (nivel)</span><span id="level_val">50</span></div>
+      <input type="range" id="level" min="0" max="100" value="50" />
+    </div>
+    <div class="group">
+      <div class="lbl"><span>Contraste (ventana)</span><span id="window_val">90</span></div>
+      <input type="range" id="window" min="10" max="100" value="90" />
+    </div>
+
+    <h3 style="margin-top:8px;">🔥 Grad-CAM</h3>
+    <div class="switch">Mostrar atención del modelo
+      <div class="toggle on" id="grad_toggle"></div>
+    </div>
+    <div class="group">
+      <div class="lbl"><span>Opacidad Grad-CAM</span><span id="gradOpacity_val">70</span></div>
+      <input type="range" id="gradOpacity" min="0" max="100" value="70" />
+    </div>
+    <div class="group">
+      <div class="lbl"><span>Umbral visual</span><span id="gradThresh_val">45</span></div>
+      <input type="range" id="gradThresh" min="0" max="100" value="45" />
+    </div>
+  </div>
+
+  <!-- Panel derecho: cámara y cortes -->
+  <div class="panel right">
+    <h3>🎥 Vistas</h3>
+    <div class="btn-grid">
+      <div class="btn" id="view_anterior">Anterior</div>
+      <div class="btn" id="view_posterior">Posterior</div>
+      <div class="btn" id="view_left">Izq.</div>
+      <div class="btn" id="view_right">Der.</div>
+      <div class="btn" id="view_superior">Superior</div>
+      <div class="btn" id="view_inferior">Inferior</div>
+      <div class="btn primary wide" id="view_reset">Restablecer cámara</div>
+    </div>
+
+    <h3 style="margin-top:14px;">🌀 Rotación</h3>
+    <div class="group">
+      <div class="lbl"><span>Velocidad</span><span id="speed_val">40</span></div>
+      <input type="range" id="speed" min="0" max="200" value="40" />
+    </div>
+
+    <h3 style="margin-top:6px;">✂️ Planos de recorte</h3>
+    <div class="switch">Sagital (X)
+      <div class="toggle" id="clip_toggle_0"></div>
+    </div>
+    <input type="range" id="clip_0" min="0" max="100" value="50" />
+    <div class="switch" style="margin-top:6px;">Coronal (Y)
+      <div class="toggle" id="clip_toggle_1"></div>
+    </div>
+    <input type="range" id="clip_1" min="0" max="100" value="50" />
+    <div class="switch" style="margin-top:6px;">Axial (Z)
+      <div class="toggle" id="clip_toggle_2"></div>
+    </div>
+    <input type="range" id="clip_2" min="0" max="100" value="50" />
+  </div>
+
+  <!-- Panel inferior-izquierdo: información + leyenda -->
+  <div class="panel info legend">
+    <h3>📊 Información</h3>
+    <div class="row"><span class="k">Archivo</span><span class="v" id="m_file">—</span></div>
+    <div class="row"><span class="k">Volumen</span><span class="v cyan" id="m_shape">—</span></div>
+    <div class="row"><span class="k">Mejor slice</span><span class="v" id="m_best">—</span></div>
+    <div class="row"><span class="k">Confianza máx.</span><span class="v amber" id="m_score">—</span></div>
+    <div class="row"><span class="k">Score medio</span><span class="v" id="m_mean">—</span></div>
+    <div class="row"><span class="k">Máximo</span><span class="v" id="s_max">—</span></div>
+    <div class="row"><span class="k">Mediana</span><span class="v" id="s_median">—</span></div>
+    <div class="row"><span class="k">P95</span><span class="v" id="s_p95">—</span></div>
+    <div class="row"><span class="k">Slices &gt; umbral</span><span class="v" id="s_above">—</span></div>
+    <div class="row"><span class="k">Vóxel</span><span class="v" id="m_spacing">—</span></div>
+    <div class="row"><span class="k">Modelo</span><span class="v" id="m_model">—</span></div>
+    <div style="margin-top:12px;">
+      <div class="lbl" style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:1.2px;">Densidad tisular</div>
+      <div class="grad"></div>
+      <div class="glabels"><span>Fluido</span><span>Tejido</span><span>Hueso</span></div>
+      <div class="focus"><span class="sw"></span>Atención del modelo (Grad-CAM)</div>
+    </div>
+  </div>
+
+  <!-- Dock inferior -->
+  <div class="dock">
+    <div class="ico active" id="d_rotate" title="Rotación automática (R)">🌀</div>
+    <div class="ico active" id="d_axes" title="Ejes de orientación">🧭</div>
+    <div class="sep"></div>
+    <div class="ico" id="d_screenshot" title="Captura (S)">📷</div>
+    <div class="ico" id="d_fullscreen" title="Pantalla completa (F)">⛶</div>
+    <div class="ico" id="d_ui" title="Ocultar interfaz (H)">👁</div>
+  </div>
+
+  <div class="hint">Arrastra para rotar · Rueda para zoom · R rotación · H interfaz · F pantalla completa · S captura</div>
+
+  <div class="disclaimer">
+    ScanIA es una herramienta experimental de apoyo. El resultado no constituye un diagnóstico médico y debe ser interpretado por un profesional sanitario cualificado. Grad-CAM es explicabilidad, no una segmentación tumoral exacta.
+  </div>
+
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="spinner"></div>
+    <div class="t">Reconstruyendo volumen 3D…</div>
+  </div>
+
+  <!-- Error WebGL -->
+  <div class="errbox" id="errbox">
+    <div class="icon">🧊</div>
+    <h2>No se puede mostrar el visor 3D</h2>
+    <p>El visor volumétrico requiere WebGL / aceleración gráfica.</p>
+  </div>
+
+  <script>window.SCANIA_VOLUME = __VOLUME__;</script>
+  <script>__JS__</script>
+</body>
+</html>

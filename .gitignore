@@ -1,0 +1,46 @@
+# ---------------------------------------------------------------
+# SECRETOS — nunca se suben
+# ---------------------------------------------------------------
+desktop-client/*.json
+!desktop-client/config.example.json
+**/credentials.json
+**/gcp-service-account.json
+**/*service-account*.json
+**/cnn-detecciondetumores-*.json
+.env
+*.pem
+*.key
+
+# ---------------------------------------------------------------
+# Entornos y cachés de Python
+# ---------------------------------------------------------------
+myenv/
+venv/
+.venv/
+env/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# ---------------------------------------------------------------
+# Datos, modelos y salidas pesadas (se descargan / se generan)
+# Los modelos entrenados se publican como GitHub Release, no en git.
+# ---------------------------------------------------------------
+tfg_run/
+gradcam_images/
+*.h5
+*.keras
+*.mat
+*.nii
+*.nii.gz
+*.zip
+*.tar
+*.tar.gz
+
+# ---------------------------------------------------------------
+# Editor / sistema operativo
+# ---------------------------------------------------------------
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store

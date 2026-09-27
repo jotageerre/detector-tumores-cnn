@@ -1,0 +1,1200 @@
+{
+  "clases": [
+    "glioma",
+    "meningioma",
+    "pituitario"
+  ],
+  "mapa_tipo": {
+    "glioma": 0,
+    "meningioma": 1,
+    "pituitario": 2
+  },
+  "n_pacientes_total": 233,
+  "asignacion": {
+    "CHENG-100360": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 18
+    },
+    "CHENG-100416": {
+      "subset": "test",
+      "tumor_type": "glioma",
+      "n_slices": 4
+    },
+    "CHENG-100572": {
+      "subset": "test",
+      "tumor_type": "meningioma",
+      "n_slices": 8
+    },
+    "CHENG-100639": {
+      "subset": "test",
+      "tumor_type": "meningioma",
+      "n_slices": 2
+    },
+    "CHENG-100820": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 17
+    },
+    "CHENG-100920": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 3
+    },
+    "CHENG-101016": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 17
+    },
+    "CHENG-101017": {
+      "subset": "test",
+      "tumor_type": "pituitario",
+      "n_slices": 15
+    },
+    "CHENG-101020": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 18
+    },
+    "CHENG-101029": {
+      "subset": "val",
+      "tumor_type": "pituitario",
+      "n_slices": 19
+    },
+    "CHENG-101082": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 2
+    },
+    "CHENG-101127": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 12
+    },
+    "CHENG-101145": {
+      "subset": "train",
+      "tumor_type": "pituitario",
+      "n_slices": 12
+    },
+    "CHENG-101305": {
+      "subset": "train",
+      "tumor_type": "pituitario",
+      "n_slices": 16
+    },
+    "CHENG-101384": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 3
+    },
+    "CHENG-101724": {
+      "subset": "train",
+      "tumor_type": "pituitario",
+      "n_slices": 11
+    },
+    "CHENG-101797": {
+      "subset": "val",
+      "tumor_type": "meningioma",
+      "n_slices": 15
+    },
+    "CHENG-101801": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 3
+    },
+    "CHENG-102075": {
+      "subset": "val",
+      "tumor_type": "glioma",
+      "n_slices": 9
+    },
+    "CHENG-102420": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 7
+    },
+    "CHENG-102446": {
+      "subset": "test",
+      "tumor_type": "meningioma",
+      "n_slices": 4
+    },
+    "CHENG-102648": {
+      "subset": "val",
+      "tumor_type": "pituitario",
+      "n_slices": 17
+    },
+    "CHENG-102669": {
+      "subset": "train",
+      "tumor_type": "pituitario",
+      "n_slices": 3
+    },
+    "CHENG-102675": {
+      "subset": "val",
+      "tumor_type": "meningioma",
+      "n_slices": 5
+    },
+    "CHENG-102714": {
+      "subset": "test",
+      "tumor_type": "meningioma",
+      "n_slices": 13
+    },
+    "CHENG-102818": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 4
+    },
+    "CHENG-102929": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 8
+    },
+    "CHENG-102935": {
+      "subset": "test",
+      "tumor_type": "meningioma",
+      "n_slices": 3
+    },
+    "CHENG-102960": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 5
+    },
+    "CHENG-102985": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 3
+    },
+    "CHENG-103046": {
+      "subset": "train",
+      "tumor_type": "pituitario",
+      "n_slices": 11
+    },
+    "CHENG-103148": {
+      "subset": "val",
+      "tumor_type": "glioma",
+      "n_slices": 12
+    },
+    "CHENG-103257": {
+      "subset": "train",
+      "tumor_type": "pituitario",
+      "n_slices": 18
+    },
+    "CHENG-103478": {
+      "subset": "train",
+      "tumor_type": "pituitario",
+      "n_slices": 23
+    },
+    "CHENG-103582": {
+      "subset": "train",
+      "tumor_type": "pituitario",
+      "n_slices": 19
+    },
+    "CHENG-103670": {
+      "subset": "train",
+      "tumor_type": "pituitario",
+      "n_slices": 11
+    },
+    "CHENG-103671": {
+      "subset": "test",
+      "tumor_type": "pituitario",
+      "n_slices": 15
+    },
+    "CHENG-103673": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 18
+    },
+    "CHENG-103731": {
+      "subset": "train",
+      "tumor_type": "pituitario",
+      "n_slices": 22
+    },
+    "CHENG-103837": {
+      "subset": "train",
+      "tumor_type": "pituitario",
+      "n_slices": 20
+    },
+    "CHENG-103925": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 15
+    },
+    "CHENG-104019": {
+      "subset": "train",
+      "tumor_type": "pituitario",
+      "n_slices": 13
+    },
+    "CHENG-104167": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 15
+    },
+    "CHENG-104281": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 17
+    },
+    "CHENG-104558": {
+      "subset": "test",
+      "tumor_type": "pituitario",
+      "n_slices": 24
+    },
+    "CHENG-104684": {
+      "subset": "val",
+      "tumor_type": "pituitario",
+      "n_slices": 23
+    },
+    "CHENG-104695": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 3
+    },
+    "CHENG-104912": {
+      "subset": "train",
+      "tumor_type": "pituitario",
+      "n_slices": 17
+    },
+    "CHENG-105187": {
+      "subset": "test",
+      "tumor_type": "pituitario",
+      "n_slices": 16
+    },
+    "CHENG-105374": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 5
+    },
+    "CHENG-105475": {
+      "subset": "test",
+      "tumor_type": "pituitario",
+      "n_slices": 10
+    },
+    "CHENG-105538": {
+      "subset": "train",
+      "tumor_type": "pituitario",
+      "n_slices": 7
+    },
+    "CHENG-105555": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 6
+    },
+    "CHENG-105638": {
+      "subset": "train",
+      "tumor_type": "pituitario",
+      "n_slices": 13
+    },
+    "CHENG-105653": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 2
+    },
+    "CHENG-105936": {
+      "subset": "test",
+      "tumor_type": "pituitario",
+      "n_slices": 11
+    },
+    "CHENG-105937": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 9
+    },
+    "CHENG-106062": {
+      "subset": "train",
+      "tumor_type": "pituitario",
+      "n_slices": 21
+    },
+    "CHENG-106284": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 13
+    },
+    "CHENG-106442": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 10
+    },
+    "CHENG-106494": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 18
+    },
+    "CHENG-106534": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 6
+    },
+    "CHENG-106592": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 1
+    },
+    "CHENG-106665": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 19
+    },
+    "CHENG-106720": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 17
+    },
+    "CHENG-106914": {
+      "subset": "val",
+      "tumor_type": "meningioma",
+      "n_slices": 15
+    },
+    "CHENG-107190": {
+      "subset": "val",
+      "tumor_type": "meningioma",
+      "n_slices": 4
+    },
+    "CHENG-107248": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 15
+    },
+    "CHENG-107429": {
+      "subset": "train",
+      "tumor_type": "pituitario",
+      "n_slices": 20
+    },
+    "CHENG-107494": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 15
+    },
+    "CHENG-107495": {
+      "subset": "train",
+      "tumor_type": "pituitario",
+      "n_slices": 18
+    },
+    "CHENG-107505": {
+      "subset": "train",
+      "tumor_type": "pituitario",
+      "n_slices": 17
+    },
+    "CHENG-107743": {
+      "subset": "train",
+      "tumor_type": "pituitario",
+      "n_slices": 14
+    },
+    "CHENG-107747": {
+      "subset": "val",
+      "tumor_type": "glioma",
+      "n_slices": 15
+    },
+    "CHENG-107946": {
+      "subset": "val",
+      "tumor_type": "meningioma",
+      "n_slices": 4
+    },
+    "CHENG-108479": {
+      "subset": "test",
+      "tumor_type": "glioma",
+      "n_slices": 2
+    },
+    "CHENG-108514": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 18
+    },
+    "CHENG-108550": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 6
+    },
+    "CHENG-108590": {
+      "subset": "val",
+      "tumor_type": "meningioma",
+      "n_slices": 6
+    },
+    "CHENG-108858": {
+      "subset": "train",
+      "tumor_type": "pituitario",
+      "n_slices": 15
+    },
+    "CHENG-108931": {
+      "subset": "train",
+      "tumor_type": "pituitario",
+      "n_slices": 15
+    },
+    "CHENG-108945": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 12
+    },
+    "CHENG-109350": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 2
+    },
+    "CHENG-109411": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 3
+    },
+    "CHENG-109471": {
+      "subset": "val",
+      "tumor_type": "pituitario",
+      "n_slices": 16
+    },
+    "CHENG-109769": {
+      "subset": "test",
+      "tumor_type": "pituitario",
+      "n_slices": 14
+    },
+    "CHENG-109898": {
+      "subset": "test",
+      "tumor_type": "pituitario",
+      "n_slices": 15
+    },
+    "CHENG-109968": {
+      "subset": "val",
+      "tumor_type": "meningioma",
+      "n_slices": 12
+    },
+    "CHENG-110116": {
+      "subset": "val",
+      "tumor_type": "meningioma",
+      "n_slices": 5
+    },
+    "CHENG-110518": {
+      "subset": "train",
+      "tumor_type": "pituitario",
+      "n_slices": 12
+    },
+    "CHENG-110537": {
+      "subset": "train",
+      "tumor_type": "pituitario",
+      "n_slices": 13
+    },
+    "CHENG-110808": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 2
+    },
+    "CHENG-110993": {
+      "subset": "train",
+      "tumor_type": "pituitario",
+      "n_slices": 12
+    },
+    "CHENG-111075": {
+      "subset": "val",
+      "tumor_type": "pituitario",
+      "n_slices": 17
+    },
+    "CHENG-111077": {
+      "subset": "test",
+      "tumor_type": "meningioma",
+      "n_slices": 10
+    },
+    "CHENG-111125": {
+      "subset": "train",
+      "tumor_type": "pituitario",
+      "n_slices": 14
+    },
+    "CHENG-111366": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 12
+    },
+    "CHENG-111532": {
+      "subset": "test",
+      "tumor_type": "meningioma",
+      "n_slices": 11
+    },
+    "CHENG-111696": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 1
+    },
+    "CHENG-111710": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 2
+    },
+    "CHENG-111785": {
+      "subset": "val",
+      "tumor_type": "pituitario",
+      "n_slices": 13
+    },
+    "CHENG-112002": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 12
+    },
+    "CHENG-112027": {
+      "subset": "test",
+      "tumor_type": "glioma",
+      "n_slices": 2
+    },
+    "CHENG-112062": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 10
+    },
+    "CHENG-112074": {
+      "subset": "val",
+      "tumor_type": "pituitario",
+      "n_slices": 14
+    },
+    "CHENG-112105": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 24
+    },
+    "CHENG-112252": {
+      "subset": "test",
+      "tumor_type": "meningioma",
+      "n_slices": 6
+    },
+    "CHENG-112552": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 21
+    },
+    "CHENG-112648": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 10
+    },
+    "CHENG-112649": {
+      "subset": "train",
+      "tumor_type": "pituitario",
+      "n_slices": 16
+    },
+    "CHENG-112650": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 2
+    },
+    "CHENG-112746": {
+      "subset": "train",
+      "tumor_type": "pituitario",
+      "n_slices": 12
+    },
+    "CHENG-112847": {
+      "subset": "train",
+      "tumor_type": "pituitario",
+      "n_slices": 13
+    },
+    "CHENG-113098": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 4
+    },
+    "CHENG-113274": {
+      "subset": "train",
+      "tumor_type": "pituitario",
+      "n_slices": 10
+    },
+    "CHENG-113435": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 20
+    },
+    "CHENG-113554": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 10
+    },
+    "CHENG-113614": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 4
+    },
+    "CHENG-113741": {
+      "subset": "val",
+      "tumor_type": "pituitario",
+      "n_slices": 8
+    },
+    "CHENG-113805": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 4
+    },
+    "CHENG-113971": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 2
+    },
+    "CHENG-114018": {
+      "subset": "test",
+      "tumor_type": "meningioma",
+      "n_slices": 15
+    },
+    "CHENG-114040": {
+      "subset": "train",
+      "tumor_type": "pituitario",
+      "n_slices": 9
+    },
+    "CHENG-114094": {
+      "subset": "test",
+      "tumor_type": "pituitario",
+      "n_slices": 13
+    },
+    "CHENG-114359": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 19
+    },
+    "CHENG-114361": {
+      "subset": "train",
+      "tumor_type": "pituitario",
+      "n_slices": 10
+    },
+    "CHENG-114417": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 4
+    },
+    "CHENG-53669": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 1
+    },
+    "CHENG-58392": {
+      "subset": "train",
+      "tumor_type": "pituitario",
+      "n_slices": 1
+    },
+    "CHENG-88510": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 1
+    },
+    "CHENG-88670": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 12
+    },
+    "CHENG-90284": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 19
+    },
+    "CHENG-92897": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 4
+    },
+    "CHENG-93329": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 5
+    },
+    "CHENG-93825": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 7
+    },
+    "CHENG-94731": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 3
+    },
+    "CHENG-95142": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 9
+    },
+    "CHENG-95969": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 1
+    },
+    "CHENG-96587": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 4
+    },
+    "CHENG-97374": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 5
+    },
+    "CHENG-97416": {
+      "subset": "test",
+      "tumor_type": "pituitario",
+      "n_slices": 24
+    },
+    "CHENG-97461": {
+      "subset": "train",
+      "tumor_type": "pituitario",
+      "n_slices": 25
+    },
+    "CHENG-97481": {
+      "subset": "val",
+      "tumor_type": "pituitario",
+      "n_slices": 14
+    },
+    "CHENG-97599": {
+      "subset": "train",
+      "tumor_type": "pituitario",
+      "n_slices": 7
+    },
+    "CHENG-97607": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 12
+    },
+    "CHENG-97609": {
+      "subset": "val",
+      "tumor_type": "glioma",
+      "n_slices": 10
+    },
+    "CHENG-97737": {
+      "subset": "val",
+      "tumor_type": "meningioma",
+      "n_slices": 15
+    },
+    "CHENG-97793": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 1
+    },
+    "CHENG-97875": {
+      "subset": "test",
+      "tumor_type": "meningioma",
+      "n_slices": 8
+    },
+    "CHENG-97890": {
+      "subset": "train",
+      "tumor_type": "pituitario",
+      "n_slices": 14
+    },
+    "CHENG-97943": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 15
+    },
+    "CHENG-98241": {
+      "subset": "val",
+      "tumor_type": "meningioma",
+      "n_slices": 19
+    },
+    "CHENG-98472": {
+      "subset": "val",
+      "tumor_type": "pituitario",
+      "n_slices": 18
+    },
+    "CHENG-98652": {
+      "subset": "train",
+      "tumor_type": "pituitario",
+      "n_slices": 12
+    },
+    "CHENG-98871": {
+      "subset": "val",
+      "tumor_type": "pituitario",
+      "n_slices": 20
+    },
+    "CHENG-98874": {
+      "subset": "test",
+      "tumor_type": "pituitario",
+      "n_slices": 16
+    },
+    "CHENG-98889": {
+      "subset": "test",
+      "tumor_type": "glioma",
+      "n_slices": 6
+    },
+    "CHENG-98992": {
+      "subset": "test",
+      "tumor_type": "pituitario",
+      "n_slices": 25
+    },
+    "CHENG-98995": {
+      "subset": "test",
+      "tumor_type": "pituitario",
+      "n_slices": 16
+    },
+    "CHENG-99017": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 6
+    },
+    "CHENG-99089": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 13
+    },
+    "CHENG-99162": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 3
+    },
+    "CHENG-99223": {
+      "subset": "train",
+      "tumor_type": "pituitario",
+      "n_slices": 21
+    },
+    "CHENG-99288": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 3
+    },
+    "CHENG-99308": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 15
+    },
+    "CHENG-99815": {
+      "subset": "train",
+      "tumor_type": "meningioma",
+      "n_slices": 6
+    },
+    "CHENG-MR017260F": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 23
+    },
+    "CHENG-MR024780B": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 8
+    },
+    "CHENG-MR024780D": {
+      "subset": "val",
+      "tumor_type": "glioma",
+      "n_slices": 7
+    },
+    "CHENG-MR024780E": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 7
+    },
+    "CHENG-MR024780G": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 29
+    },
+    "CHENG-MR026175C": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 18
+    },
+    "CHENG-MR026175E": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 22
+    },
+    "CHENG-MR029209E": {
+      "subset": "val",
+      "tumor_type": "glioma",
+      "n_slices": 24
+    },
+    "CHENG-MR029209G": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 20
+    },
+    "CHENG-MR029209I": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 26
+    },
+    "CHENG-MR031409B": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 7
+    },
+    "CHENG-MR032322C": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 38
+    },
+    "CHENG-MR033389B": {
+      "subset": "test",
+      "tumor_type": "glioma",
+      "n_slices": 24
+    },
+    "CHENG-MR033420": {
+      "subset": "test",
+      "tumor_type": "glioma",
+      "n_slices": 26
+    },
+    "CHENG-MR034694": {
+      "subset": "test",
+      "tumor_type": "glioma",
+      "n_slices": 15
+    },
+    "CHENG-MR034997": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 21
+    },
+    "CHENG-MR036496B": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 16
+    },
+    "CHENG-MR037458B": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 21
+    },
+    "CHENG-MR037458C": {
+      "subset": "val",
+      "tumor_type": "glioma",
+      "n_slices": 19
+    },
+    "CHENG-MR038469": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 18
+    },
+    "CHENG-MR039473": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 15
+    },
+    "CHENG-MR039473B": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 23
+    },
+    "CHENG-MR040240": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 28
+    },
+    "CHENG-MR040240B": {
+      "subset": "test",
+      "tumor_type": "glioma",
+      "n_slices": 25
+    },
+    "CHENG-MR040240C": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 31
+    },
+    "CHENG-MR040240D": {
+      "subset": "val",
+      "tumor_type": "glioma",
+      "n_slices": 13
+    },
+    "CHENG-MR047953C": {
+      "subset": "test",
+      "tumor_type": "glioma",
+      "n_slices": 9
+    },
+    "CHENG-MR048294": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 22
+    },
+    "CHENG-MR048294B": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 15
+    },
+    "CHENG-MR048297": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 17
+    },
+    "CHENG-MR048621B": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 19
+    },
+    "CHENG-MR048944": {
+      "subset": "test",
+      "tumor_type": "glioma",
+      "n_slices": 23
+    },
+    "CHENG-MR048944B": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 13
+    },
+    "CHENG-MR048994": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 26
+    },
+    "CHENG-MR048994B": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 17
+    },
+    "CHENG-MR049019C": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 12
+    },
+    "CHENG-MR049019G": {
+      "subset": "val",
+      "tumor_type": "glioma",
+      "n_slices": 15
+    },
+    "CHENG-MR049104": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 9
+    },
+    "CHENG-MR049104B": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 8
+    },
+    "CHENG-MR049142": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 10
+    },
+    "CHENG-MR049242C": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 5
+    },
+    "CHENG-MR049358": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 26
+    },
+    "CHENG-MR049453": {
+      "subset": "val",
+      "tumor_type": "glioma",
+      "n_slices": 25
+    },
+    "CHENG-MR049453B": {
+      "subset": "test",
+      "tumor_type": "glioma",
+      "n_slices": 22
+    },
+    "CHENG-MR049942B": {
+      "subset": "val",
+      "tumor_type": "glioma",
+      "n_slices": 10
+    },
+    "CHENG-MR050135B": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 34
+    },
+    "CHENG-MR050687": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 22
+    },
+    "CHENG-MR050687C": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 18
+    },
+    "CHENG-MR050791B": {
+      "subset": "val",
+      "tumor_type": "glioma",
+      "n_slices": 22
+    },
+    "CHENG-MR051461": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 23
+    },
+    "CHENG-MR051461B": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 9
+    },
+    "CHENG-MR051586": {
+      "subset": "test",
+      "tumor_type": "glioma",
+      "n_slices": 22
+    },
+    "CHENG-MR051644": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 37
+    },
+    "CHENG-MR051644B": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 16
+    },
+    "CHENG-MR051644C": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 35
+    },
+    "CHENG-MR051651": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 17
+    },
+    "CHENG-MR051651B": {
+      "subset": "val",
+      "tumor_type": "glioma",
+      "n_slices": 19
+    },
+    "CHENG-MR051796": {
+      "subset": "val",
+      "tumor_type": "glioma",
+      "n_slices": 20
+    },
+    "CHENG-MR051796B": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 11
+    },
+    "CHENG-MR052550": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 18
+    },
+    "CHENG-MR052585B": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 6
+    },
+    "CHENG-MR053110B": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 19
+    },
+    "CHENG-MR053110E": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 22
+    },
+    "CHENG-MR053241C": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 4
+    },
+    "CHENG-MR054683": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 6
+    },
+    "CHENG-MR054875": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 9
+    },
+    "CHENG-MR056144": {
+      "subset": "train",
+      "tumor_type": "glioma",
+      "n_slices": 5
+    }
+  },
+  "fingerprint": {
+    "split_hash_multiclase_16": "fda7e2daeb9ec2de",
+    "split_hash_multiclase_full": "fda7e2daeb9ec2de596e807728454329cd140398dd10f834599457eca86c0092",
+    "cheng_manifest_hash_16": "a78633a95254d7c2",
+    "cheng_manifest_hash_full": "a78633a95254d7c214ea9dd787117aecc0003b945d177658122384d5f02d3180",
+    "manifest_final_csv_sha256": "c468eb4e057dfab9b883b73c59e959f6194b0c46037df6b7cef22c9b2e5e6487",
+    "manifest_final_csv_filas_totales": 5872,
+    "manifest_final_csv_filas_cheng": 3064,
+    "n_pacientes_cheng": 233,
+    "n_pacientes_train": 163,
+    "n_pacientes_val": 35,
+    "n_pacientes_test": 35,
+    "referencia_run_original": {
+      "job_slurm": 70436,
+      "manifest_hash_dataset_completo": "b6881df313b8c6b5",
+      "split_hash_dataset_completo": "81d2b363fa9c274a",
+      "config_hash_dataset_completo": "b67c4e3262df5b24",
+      "fecha_ejecucion_original": "2026-08-27 15:01:32"
+    }
+  }
+}

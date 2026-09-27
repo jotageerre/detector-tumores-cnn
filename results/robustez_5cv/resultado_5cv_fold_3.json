@@ -1,0 +1,114 @@
+{
+  "tipo_experimento": "5-fold patient-level robustness validation",
+  "modelo": "ResNet50 fine-tuned previamente seleccionado",
+  "fold": 3,
+  "fold_index": 2,
+  "seed": 1003,
+  "n_train_patients": 187,
+  "n_eval_patients": 46,
+  "n_train_slices": 2438,
+  "n_eval_slices": 626,
+  "balanced_accuracy_paciente": 0.943355119825708,
+  "accuracy_paciente": 0.9347826086956522,
+  "macro_f1_paciente": 0.9428571428571427,
+  "recall_por_clase": {
+    "glioma": 0.9411764705882353,
+    "meningioma": 0.8888888888888888,
+    "pituitario": 1.0
+  },
+  "matriz_confusion": [
+    [
+      16,
+      1,
+      0
+    ],
+    [
+      2,
+      16,
+      0
+    ],
+    [
+      0,
+      0,
+      11
+    ]
+  ],
+  "epochs_head": 6,
+  "epochs_finetune": 6,
+  "lr_head": 0.0001,
+  "lr_finetune": 1e-05,
+  "n_capas_finetune": 20,
+  "batch_norm_congelado": true,
+  "capas_desbloqueadas": [
+    "conv5_block1_2_conv",
+    "conv5_block1_2_relu",
+    "conv5_block1_0_conv",
+    "conv5_block1_3_conv",
+    "conv5_block1_add",
+    "conv5_block1_out",
+    "conv5_block2_1_conv",
+    "conv5_block2_1_relu",
+    "conv5_block2_2_conv",
+    "conv5_block2_2_relu",
+    "conv5_block2_3_conv",
+    "conv5_block2_add",
+    "conv5_block2_out",
+    "conv5_block3_1_conv",
+    "conv5_block3_1_relu",
+    "conv5_block3_2_conv",
+    "conv5_block3_2_relu",
+    "conv5_block3_3_conv",
+    "conv5_block3_add",
+    "conv5_block3_out"
+  ],
+  "parametros": 23850371,
+  "parametros_entrenables": 14691331,
+  "segundos_head": 29.0,
+  "segundos_finetune": 30.99,
+  "modelo_path": "results/tumor_type/robustez_5cv/models/resnet50_robustez5cv_fold_3.keras",
+  "modelo_sha256": "256e352a86171036ed0f00aa31cba57c700a9ce9b332d68146715993cc159af3",
+  "fold_json": "results/tumor_type/robustez_5cv/splits/fold_3.json",
+  "fold_json_sha256": "a613622012f8be270a8d661b8eff58a8b9485eda0278aa211e81f7fd8c35d574",
+  "folds_master_sha256": "cf13cf8e661f3f010bbe3761ebf3ec09a8c4f9b879aceb55b2f8a169e5945674",
+  "cv_semantic_sha256": "985d9fc941ac672c9226a434ee31bbd827c2dc063e12e28b0235a5bd2550ce72",
+  "manifest_sha256": "5f92b77aba635b23a3873adeb9298750b66d05c7070694067e208d2283007eb7",
+  "protocol_sha256": "b6f2a7f421032e758fe4dbd97405e79e55a8b28a8c4f8593cb171072652a60f2",
+  "training_script_sha256": "bd92f37861461e8cad4032ba7831749886de58453f2c42b21d8e17fd6c5414e6",
+  "historial_head": {
+    "loss": [
+      1.1209949254989624,
+      0.6684280633926392,
+      0.6039221286773682,
+      0.5332900881767273,
+      0.49472683668136597,
+      0.46316662430763245
+    ],
+    "accuracy": [
+      0.5533223748207092,
+      0.7198523283004761,
+      0.7473338842391968,
+      0.7850697040557861,
+      0.8084495663642883,
+      0.8125512599945068
+    ]
+  },
+  "historial_finetune": {
+    "loss": [
+      0.4267433285713196,
+      0.3047880530357361,
+      0.27539730072021484,
+      0.2216830849647522,
+      0.19647079706192017,
+      0.17459341883659363
+    ],
+    "accuracy": [
+      0.8228055834770203,
+      0.8839212656021118,
+      0.893765389919281,
+      0.9146841764450073,
+      0.9269893169403076,
+      0.9360131025314331
+    ]
+  },
+  "fecha": "2026-09-04 17:17:13"
+}
