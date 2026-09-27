@@ -1,3 +1,5 @@
+**Idioma:** **Español** · [English](en/02_data.md) · [Français](fr/02_donnees.md)
+
 # 2. Datos
 
 Este repositorio **no contiene imágenes médicas**. Contiene la información necesaria para descargarlas de sus fuentes oficiales y reconstruir exactamente el mismo reparto por paciente.

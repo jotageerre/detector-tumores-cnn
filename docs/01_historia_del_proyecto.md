@@ -1,3 +1,5 @@
+**Idioma:** **Español** · [English](en/01_project_history.md) · [Français](fr/01_historique_du_projet.md)
+
 # 1. Historia del proyecto: qué salió mal y cómo se corrigió
 
 Este TFG no siguió un plan lineal. Su resultado más útil para otras personas es precisamente el camino: tres decisiones metodológicas que cambiaron el proyecto y que cualquiera que trabaje con imágenes médicas debería conocer.

@@ -1,3 +1,5 @@
+**Idioma:** **Español** · [English](README.en.md) · [Français](README.fr.md)
+
 # training/
 
 Código para preparar los datos, entrenar y evaluar. La guía completa, con salidas esperadas, está en [`docs/05_guia_reproduccion.md`](../docs/05_guia_reproduccion.md).

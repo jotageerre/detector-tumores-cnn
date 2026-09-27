@@ -1,3 +1,5 @@
+**Idioma:** **Español** · [English](README.en.md) · [Français](README.fr.md)
+
 # legacy/scania — prototipo histórico de interfaz
 
 Artefactos del primer prototipo de interfaz (*ScanIA*), fechados el 11/07/2026, antes de la reconstrucción del dataset. Se conservan **solo como referencia histórica** (Anexo F de los anexos técnicos).

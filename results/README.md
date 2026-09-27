@@ -1,3 +1,5 @@
+**Idioma:** **Español** · [English](README.en.md) · [Français](README.fr.md)
+
 # results/
 
 Resultados originales de la **validación de robustez de 5 folds** (jobs 71102 y 71107), copiados sin modificar. No se incluyen los modelos (`.keras`, ~214 MB cada uno).

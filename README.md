@@ -1,3 +1,5 @@
+**Idioma:** **Español** · [English](README.en.md) · [Français](README.fr.md)
+
 # Clasificación multiclase de tumores cerebrales en RM con Deep Learning
 
 **Trabajo Fin de Grado** · Grado en Ingeniería Informática – Ingeniería del Software · Universidad de Sevilla (ETSII), 2026
@@ -47,6 +49,8 @@ detector-tumores-cnn/
 │   ├── 05_guia_reproduccion.md       ★ Cómo recrear el entrenamiento paso a paso
 │   ├── 06_despliegue_google_cloud.md ★ Cómo montar tu propio Cloud Run + app de escritorio
 │   ├── 07_limitaciones_y_etica.md
+│   ├── en/                           Las mismas guías en inglés
+│   ├── fr/                           Las mismas guías en francés
 │   └── protocolos/                   Protocolos C.1–C.4 tal como se fijaron antes de cada experimento
 ├── training/                  Código de entrenamiento y evaluación
 │   ├── notebooks/             Notebooks originales del pipeline (Colab / HPC)
@@ -92,7 +96,7 @@ Para que nadie confunda lo que produjo los resultados del TFG con lo que se ha p
 | Tipo | Ficheros |
 |---|---|
 | **Artefactos originales del TFG** (sin modificar) | `training/notebooks/*.ipynb`, `training/robustez_5cv/*`, `training/slurm/*`, `data/splits/*`, `results/robustez_5cv/*`, `docs/protocolos/*`, `docs/*.pdf`, `legacy/scania/*`, `cloud-run-backend/main.py` |
-| **Añadido para el repositorio** | `training/herramientas/construir_manifest_cheng.py`, `training/entrenar_modelo_final.py`, todos los `README.md` y `docs/*.md`, `desktop-client/main.py` (solo cambia la configuración: rutas relativas en vez de absolutas y URL/buckets configurables por variable de entorno), `cloud-run-backend/Procfile` |
+| **Añadido para el repositorio** | `training/herramientas/construir_manifest_cheng.py`, `training/entrenar_modelo_final.py`, todos los `README*.md` y las guías de `docs/` (ES/EN/FR), `desktop-client/main.py` (solo cambia la configuración: rutas relativas en vez de absolutas y URL/buckets configurables por variable de entorno), `cloud-run-backend/Procfile` |
 
 El notebook exacto que ejecutó el ajuste fino y la evaluación final (jobs 70929–70931) **no se conserva** (Anexo A.3). `entrenar_modelo_final.py` reconstruye ese protocolo a partir del protocolo C.1 y del script real de la validación 5CV, que usa exactamente la misma receta.
 

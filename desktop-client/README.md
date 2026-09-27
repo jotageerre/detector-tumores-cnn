@@ -1,3 +1,5 @@
+**Idioma:** **Español** · [English](README.en.md) · [Français](README.fr.md)
+
 # desktop-client — aplicación de escritorio
 
 Aplicación Tkinter que:

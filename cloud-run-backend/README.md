@@ -1,3 +1,5 @@
+**Idioma:** **Español** · [English](README.en.md) · [Français](README.fr.md)
+
 # cloud-run-backend — API de inferencia (servicio `run-model`)
 
 API Flask desplegada en Google Cloud Run. Sirve dos modelos y un visor 3D:

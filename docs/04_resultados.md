@@ -1,3 +1,5 @@
+**Idioma:** **Español** · [English](en/04_results.md) · [Français](fr/04_resultats.md)
+
 # 4. Resultados
 
 Todas las cifras proceden del Anexo D (ficheros de resultados verificados). Todas son **a nivel de paciente**.

@@ -1,3 +1,5 @@
+**Idioma:** **Español** · [English](en/07_limitations_and_ethics.md) · [Français](fr/07_limites_et_ethique.md)
+
 # 7. Limitaciones y consideraciones éticas
 
 Fuente: capítulos 11 y 13 de la memoria.

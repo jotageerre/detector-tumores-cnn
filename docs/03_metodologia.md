@@ -1,3 +1,5 @@
+**Idioma:** **Español** · [English](en/03_methodology.md) · [Français](fr/03_methodologie.md)
+
 # 3. Metodología de Deep Learning
 
 Fuente: capítulos 7, 8 y 9 de la memoria; Anexos C y H.

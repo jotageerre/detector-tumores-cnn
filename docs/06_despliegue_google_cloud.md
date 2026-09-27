@@ -1,3 +1,5 @@
+**Idioma:** **Español** · [English](en/06_google_cloud_deployment.md) · [Français](fr/06_deploiement_google_cloud.md)
+
 # 6. Montar tu propio servicio en Google Cloud Run y la app de escritorio
 
 Esta guía despliega desde cero la misma arquitectura que usa el TFG (capítulo 5 y Anexo J de la memoria): una app de escritorio que sube la imagen a Cloud Storage y una API en Cloud Run que la clasifica.

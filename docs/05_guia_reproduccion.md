@@ -1,3 +1,5 @@
+**Idioma:** **Español** · [English](en/05_reproduction_guide.md) · [Français](fr/05_guide_reproduction.md)
+
 # 5. Guía de reproducción paso a paso
 
 Esta guía explica cómo recrear los experimentos del TFG, de la ruta más rápida a la más fiel al original. Resume y amplía el Anexo G (instrucciones de reproducibilidad).

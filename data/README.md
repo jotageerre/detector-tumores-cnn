@@ -1,3 +1,5 @@
+**Idioma:** **Español** · [English](README.en.md) · [Français](README.fr.md)
+
 # data/
 
 Aquí **no hay imágenes**. Solo los ficheros que fijan qué paciente va a cada subconjunto, para que cualquiera pueda reconstruir exactamente los mismos repartos. Las imágenes se descargan de su fuente oficial con `training/herramientas/construir_manifest_cheng.py` (ver [`docs/02_datos.md`](../docs/02_datos.md)).
