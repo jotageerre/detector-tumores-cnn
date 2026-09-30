@@ -108,3 +108,9 @@ resonancia magnética mediante aprendizaje profundo [Trabajo Fin de Grado]. Univ
 ```
 
 Si usas los datos, cita también la fuente original: Cheng, J. (2024). *Brain Tumor Dataset.* figshare. https://doi.org/10.6084/m9.figshare.1512427.v8 (CC BY 4.0), y el artículo que los autores piden citar en la página del dataset.
+
+## Licencia
+
+Este proyecto se distribuye bajo los términos de la licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más información.
+
+Los datasets, modelos preentrenados, bibliotecas y demás recursos de terceros mantienen sus respectivas licencias y condiciones de uso.
